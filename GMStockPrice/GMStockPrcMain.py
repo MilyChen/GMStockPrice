@@ -55,7 +55,7 @@ if today > 1   : # run on weekdays only, 0 = sunday  script runs at 3am for prev
     driver.quit()
     df = pd.DataFrame({'PriceDate':pdates,'StockNames':tickers,'LastPrice':lastprices,'High':highprice,'Low':lowprice}) 
     
-    savepath = 'C:\\Users\\Mily.mc-pc\\eclipse\\ws_portfolio_tracker\\'
+    savepath = 'C:\\Users\\Mily.mc-pc\\eclipse\\excelfilename\\'
     
     df.to_csv(savepath + 'ws2.csv', index=False, encoding='utf-8', header=False, mode='a') # new file
 print ("Finished ;)")
